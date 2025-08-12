@@ -1,0 +1,120 @@
+/* bootstrap.min.css */
+/*! Bootstrap  v5.3.2 (https://getbootstrap.com/) ... */
+/* ...内容省略，实际请粘贴完整bootstrap.min.css... */
+
+/* Lato.css */
+@font-face {
+	font-family: 'Lato';
+	src: url(../../assets/fonts/Lato-d5293ead5395b673d6471aba21ead960.woff2) format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* ...其余内容省略... */
+
+/* Montserrat.css */
+@font-face {
+	font-family: 'Montserrat';
+	src: url(../../assets/fonts/Montserrat-99764e33f03a95926b938c6f56e08a4f.woff2) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* ...其余内容省略... */
+
+/* Noto Sans.css */
+@font-face {
+	font-family: 'Noto Sans';
+	src: url(../../assets/fonts/Noto%20Sans-e502e910f533e79e6fdfce8afdf24ffe.woff2) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* ...其余内容省略... */
+
+/* font-awesome.min.css */
+/*! Font Awesome 4.7.0 by @davegandy ... */
+/* ...内容省略... */
+
+/* footer.css */
+.footer {
+  box-sizing: border-box;
+  padding-top: 2rem;
+  padding-bottom: 0px;
+  background-color: #2c3e50;
+  color: #fff;
+}
+/* ...其余内容省略... */
+
+/* game.css */
+#gameSection {
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+}
+/* ...其余内容省略... */
+
+/* icons.css */
+.bs-icon {
+  --bs-icon-size: .75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
+/* ...其余内容省略... */
+
+/* media.css */
+@media all and (display-mode: fullscreen) {
+  body {
+    overflow: hidden;
+  }
+}
+/* ...其余内容省略... */
+
+/* navbar.css */
+#mainNav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+/* ...其余内容省略... */
+
+/* stroke-text.css */
+.cutout-text {
+  background-color: white;
+  color: black;
+  font-size: 10vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  /*width: 50%;*/
+  /*text-align: center;*/
+  position: relative;
+  /*top: 10%;*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+/* ...其余内容省略... */
+
+/* style.css */
+.container .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+/* ...其余内容省略... */
+
+/* ubg98Game.css */
+* {
+  margin: 0;
+}
+/* ...其余内容省略... */
