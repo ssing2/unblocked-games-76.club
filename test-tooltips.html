@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tooltips Test</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+        body { padding: 20px; }
+        .test-section { margin-bottom: 30px; }
+        .game-item { 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            padding: 15px; 
+            margin: 10px; 
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .game-item:hover { 
+            background-color: #f8f9fa; 
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .game-image { 
+            width: 100px; 
+            height: 75px; 
+            background: linear-gradient(45deg, #007bff, #28a745); 
+            border-radius: 4px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: white; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Game Description Tooltips Test</h1>
+        <p class="lead">Hover over games to see their descriptions!</p>
+        
+        <div class="test-section">
+            <h3>Pixel Games</h3>
+            <div class="row" id="gamelist-1">
+                <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a class="text-center game-item d-block text-decoration-none" href="/crossy-road-unblocked.html">
+                        <div class="game-image mx-auto mb-2">CR</div>
+                        <h5>Crossy Road</h5>
+                    </a>
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a class="text-center game-item d-block text-decoration-none" href="/drive-mad-unblocked.html">
+                        <div class="game-image mx-auto mb-2">DM</div>
+                        <h5>Drive Mad</h5>
+                    </a>
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a class="text-center game-item d-block text-decoration-none" href="/retro-bowl-unblocked.html">
+                        <div class="game-image mx-auto mb-2">RB</div>
+                        <h5>Retro Bowl</h5>
+                    </a>
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a class="text-center game-item d-block text-decoration-none" href="/drift-boss-unblocked.html">
+                        <div class="game-image mx-auto mb-2">DB</div>
+                        <h5>Drift Boss</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Popular Games</h3>
+            <div class="row" id="gamelist-2">
+                <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a class="text-center game-item d-block text-decoration-none" href="/subway-surfers-unblocked.html">
+                        <div class="game-image mx-auto mb-2">SS</div>
+                        <h5>Subway Surfers</h5>
+                    </a>
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a class="text-center game-item d-block text-decoration-none" href="/geometry-dash-unblocked.html">
+                        <div class="game-image mx-auto mb-2">GD</div>
+                        <h5>Geometry Dash</h5>
+                    </a>
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a class="text-center game-item d-block text-decoration-none" href="/friday-night-funkin-unblocked.html">
+                        <div class="game-image mx-auto mb-2">FNF</div>
+                        <h5>Friday Night Funkin</h5>
+                    </a>
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a class="text-center game-item d-block text-decoration-none" href="/fruit-ninja-unblocked.html">
+                        <div class="game-image mx-auto mb-2">FN</div>
+                        <h5>Fruit Ninja</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert alert-info mt-4">
+            <h5>Test Instructions:</h5>
+            <ul>
+                <li>Hover over any game to see its description tooltip</li>
+                <li>Tooltips should appear smoothly with a dark background</li>
+                <li>Descriptions should be 50-150 words explaining gameplay</li>
+                <li>Tooltips should disappear when you move the mouse away</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/game-descriptions.js"></script>
+    
+    <script>
+        // Initialize tooltips for the second section as well
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add tooltips to the second game list too
+            document.querySelectorAll('#gamelist-2 .col a').forEach(link => {
+                const gameKey = getGameKeyFromUrl(link.getAttribute('href'));
+                if (gameKey && gameDescriptions[gameKey]) {
+                    link.addEventListener('mouseenter', (e) => showGameTooltip(gameKey, e));
+                    link.addEventListener('mouseleave', hideGameTooltip);
+                    link.addEventListener('click', hideGameTooltip);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
