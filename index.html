@@ -4,6 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    
     <title>Unblocked Games 76 - Play 1000+ Free Online Games at School | Unblockedgames76.club</title>
     <meta name="description" content="Play the best unblocked games for free at school or work! unblockedgames76.club offers 1000+ HTML5 games including racing, puzzle, shooting, sports, and more with no restrictions."><meta name="author" content="unblockedgames76.club">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -32,54 +39,109 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://unblockedgames76.club/">
     
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/logo_180.png">
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/fonts/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Critical CSS - Load immediately -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    
+    <!-- Non-critical CSS - Load asynchronously -->
+    <link rel="preload" href="assets/css/Lato.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/Montserrat.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/Noto%20Sans.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/fonts/fontawesome-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/fonts/fontawesome5-overrides.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/game.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/media.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/stroke-text.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/ubg98Game.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Optimized Favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo_32.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/logo_180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo_180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/logo_192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/logo_512.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Lato.css">
-    <link rel="stylesheet" href="assets/css/Montserrat.css">
-    <link rel="stylesheet" href="assets/css/Noto%20Sans.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/game.css">
-    <link rel="stylesheet" href="assets/css/icons.css">
-    <link rel="stylesheet" href="assets/css/media.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/stroke-text.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/ubg98Game.css">
     
-    <!-- Inline CSS for General Optimizations -->
+    <!-- Fallback for browsers that don't support preload -->
+    <noscript>
+        <link rel="stylesheet" href="assets/css/Lato.css">
+        <link rel="stylesheet" href="assets/css/Montserrat.css">
+        <link rel="stylesheet" href="assets/css/Noto%20Sans.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/game.css">
+        <link rel="stylesheet" href="assets/css/icons.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+        <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/stroke-text.css">
+        <link rel="stylesheet" href="assets/css/ubg98Game.css">
+    </noscript>
+    
+    <!-- Critical Inline CSS -->
     <style>
-        /* Smooth scroll for anchor links */
+        /* Preload optimizations */
         html {
             scroll-behavior: smooth;
         }
         
-        /* Game card hover effects */
+        /* Above-the-fold critical styles */
+        .navbar {
+            background-color: #6c757d !important;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: #fff !important;
+        }
+        
+        /* Critical portfolio grid */
+        .portfolio .col {
+            margin-bottom: 2rem;
+        }
+        
         .portfolio .col a {
-            transition: transform 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s ease;
         }
         
         .portfolio .col a:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
         }
         
-        /* Optimize game images */
+        /* Optimize images loading */
         .portfolio img {
+            width: 100%;
+            height: auto;
             border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.2s ease;
+            background-color: #f8f9fa;
         }
         
         .portfolio img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transform: scale(1.02);
+        }
+        
+        /* Loading placeholder */
+        .portfolio img[data-src] {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+        
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
         }
     </style>
 </head>
@@ -124,19 +186,8 @@
           {"@type": "ListItem", "position": 5, "name": "Cookie Clicker 2", "url": "https://unblockedgames76.club/cookie-clicker-2-unblocked.html"}
         ]
       }
-    }</script>Free online games, HTML5 games, games at school, no flash games, unblocked gaming">
-
-    
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/logo_180.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo_32.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/logo_180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/logo_192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/logo_512.png">
-    
-
-    
+    }
+    </script>
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
@@ -168,122 +219,122 @@
             <div class="row">
                 <!-- Optimized image alt attributes (partial display, others modified similarly) -->
                 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-                  <a class="text-center" href="/drive-mad-unblocked.html">
-                    <img src="assets/img/games/drive-mad.png" alt="Drive Mad - Unblocked Car Game" style="width: 100%;">
+                  <a class="text-center" href="drive-mad-unblocked.html">
+                    <img src="assets/img/games/drive-mad.png" alt="Drive Mad - Unblocked Car Game" style="width: 100%;" loading="eager" width="300" height="200">
                     <h4 style="padding: 10px;">Drive Mad</h4>
                   </a>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-                  <a class="text-center" href="/g-switch-4-unblocked.html">
-                    <img src="assets/img/games/g-switch-4.png" alt="G Switch 4 - Unblocked Running Game" style="width: 100%;">
+                  <a class="text-center" href="g-switch-4-unblocked.html">
+                    <img src="assets/img/games/g-switch-4.png" alt="G Switch 4 - Unblocked Running Game" style="width: 100%;" loading="eager" width="300" height="200">
                     <h4 style="padding: 10px;">G Switch 4</h4>
                   </a>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-                  <a class="text-center" href="/geometry-jump-unblocked.html">
-                    <img src="assets/img/games/geometry-jump.png" alt="Geometry Jump - Unblocked Arcade Game" style="width: 100%;">
+                  <a class="text-center" href="geometry-jump-unblocked.html">
+                    <img src="assets/img/games/geometry-jump.png" alt="Geometry Jump - Unblocked Arcade Game" style="width: 100%;" loading="eager" width="300" height="200">
                     <h4 style="padding: 10px;">Geometry Jump</h4>
                   </a>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-                  <a class="text-center" href="/heads-arena-soccer-all-stars-unblocked.html">
-                    <img src="assets/img/games/heads-arena-soccer-all-stars.png" alt="Heads Arena Soccer All Stars - Unblocked Sports Game" style="width: 100%;">
+                  <a class="text-center" href="heads-arena-soccer-all-stars-unblocked.html">
+                    <img src="assets/img/games/heads-arena-soccer-all-stars.png" alt="Heads Arena Soccer All Stars - Unblocked Sports Game" style="width: 100%;" loading="lazy" width="300" height="200">
                     <h4 style="padding: 10px;">Heads Arena Soccer All Stars</h4>
                   </a>
                 </div>
                 <!-- Add alt attributes to remaining game images following the same pattern -->
                 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/3-pandas-in-japan-unblocked.html">
+  <a class="text-center" href="3-pandas-in-japan-unblocked.html">
     <img src="assets/img/games/3-pandas-in-japan.png" alt="3 Pandas In Japan - Unblocked Puzzle Game" style="width: 100%;">
     <h4 style="padding: 10px;">3 Pandas In Japan</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/adam-and-eve-7-unblocked.html">
+  <a class="text-center" href="adam-and-eve-7-unblocked.html">
     <img src="assets/img/games/adam-and-eve-7.png" alt="Adam And Eve 7 - Unblocked Adventure Game" style="width: 100%;">
     <h4 style="padding: 10px;">Adam And Eve 7</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/boxing-random-unblocked.html">
+  <a class="text-center" href="boxing-random-unblocked.html">
     <img src="assets/img/games/boxing-random.png" alt="Boxing Random - Unblocked Sports Game" style="width: 100%;">
     <h4 style="padding: 10px;">Boxing Random</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/cookie-clicker-2-unblocked.html">
+  <a class="text-center" href="cookie-clicker-2-unblocked.html">
     <img src="assets/img/games/cookie-clicker-2.png" alt="Cookie Clicker 2 - Unblocked Clicker Game" style="width: 100%;">
     <h4 style="padding: 10px;">Cookie Clicker 2</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/iron-snout-unblocked.html">
+  <a class="text-center" href="iron-snout-unblocked.html">
     <img src="assets/img/games/iron-snout.png" alt="Iron Snout - Unblocked Fighting Game" style="width: 100%;">
     <h4 style="padding: 10px;">Iron Snout</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/little-alchemy-2-unblocked.html">
+  <a class="text-center" href="little-alchemy-2-unblocked.html">
     <img src="assets/img/games/little-alchemy-2.png" alt="Little Alchemy 2 - Unblocked Puzzle Game" style="width: 100%;">
     <h4 style="padding: 10px;">Little Alchemy 2</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/mr-bullet-unblocked.html">
+  <a class="text-center" href="mr-bullet-unblocked.html">
     <img src="assets/img/games/mr-bullet.png" alt="Mr Bullet - Unblocked Shooting Game" style="width: 100%;">
     <h4 style="padding: 10px;">Mr Bullet</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/papa-cherry-saga-unblocked.html">
+  <a class="text-center" href="papa-cherry-saga-unblocked.html">
     <img src="assets/img/games/papa-cherry-saga.png" alt="Papa Cherry Saga - Unblocked Puzzle Game" style="width: 100%;">
     <h4 style="padding: 10px;">Papa Cherry Saga</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/rooftop-snipers-unblocked.html">
+  <a class="text-center" href="rooftop-snipers-unblocked.html">
     <img src="assets/img/games/rooftop-snipers.png" alt="Rooftop Snipers - Unblocked Shooting Game" style="width: 100%;">
     <h4 style="padding: 10px;">Rooftop Snipers</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/rusher-crusher-unblocked.html">
+  <a class="text-center" href="rusher-crusher-unblocked.html">
     <img src="assets/img/games/rusher-crusher.png" alt="Rusher Crusher - Unblocked Arcade Game" style="width: 100%;">
     <h4 style="padding: 10px;">Rusher Crusher</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/space-bar-clicker-unblocked.html">
+  <a class="text-center" href="space-bar-clicker-unblocked.html">
     <img src="assets/img/games/space-bar-clicker.png" alt="Space Bar Clicker - Unblocked Clicker Game" style="width: 100%;">
     <h4 style="padding: 10px;">Space Bar Clicker</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/stick-merge-2-unblocked.html">
+  <a class="text-center" href="stick-merge-2-unblocked.html">
     <img src="assets/img/games/stick-merge-2.png" alt="Stick Merge 2 - Unblocked Merge Game" style="width: 100%;">
     <h4 style="padding: 10px;">Stick Merge 2</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/subway-surfers-unblocked.html">
+  <a class="text-center" href="subway-surfers-unblocked.html">
     <img src="assets/img/games/subway-surfers.png" alt="Subway Surfers - Unblocked Running Game" style="width: 100%;">
     <h4 style="padding: 10px;">Subway Surfers</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/super-mario-wonder-unblocked.html">
+  <a class="text-center" href="super-mario-wonder-unblocked.html">
     <img src="assets/img/games/super-mario-wonder.png" alt="Super Mario Wonder - Unblocked Platform Game" style="width: 100%;">
     <h4 style="padding: 10px;">Super Mario Wonder</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/tag-unblocked.html">
+  <a class="text-center" href="tag-unblocked.html">
     <img src="assets/img/games/tag.png" alt="Tag - Unblocked Arcade Game" style="width: 100%;">
     <h4 style="padding: 10px;">Tag</h4>
   </a>
 </div>
 <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-  <a class="text-center" href="/vex-8-unblocked.html">
+  <a class="text-center" href="vex-8-unblocked.html">
     <img src="assets/img/games/vex-8.png" alt="Vex 8 - Unblocked Platform Game" style="width: 100%;">
     <h4 style="padding: 10px;">Vex 8</h4>
   </a>
@@ -301,7 +352,7 @@
 
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/ball-sort-halloween-unblocked.html">
+      <a class="text-center" href="ball-sort-halloween-unblocked.html">
         <img src="assets/img/games/ball-sort-halloween.png" alt="Ball Sort Halloween - Unblocked Puzzle Game" style="width: 100%;">
         <h4 style="padding: 10px;">Ball Sort Halloween</h4>
       </a>
@@ -309,14 +360,14 @@
     
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/ball-sort-soccer-unblocked.html">
+      <a class="text-center" href="ball-sort-soccer-unblocked.html">
         <img src="assets/img/games/ball-sort-soccer.png" alt="Ball Sort Soccer - Unblocked Puzzle Game" style="width: 100%;">
         <h4 style="padding: 10px;">Ball Sort Soccer</h4>
       </a>
     </div>
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/blumgi-slime-unblocked.html">
+      <a class="text-center" href="blumgi-slime-unblocked.html">
         <img src="assets/img/games/blumgi-slime.png" alt="Blumgi Slime - Unblocked Arcade Game" style="width: 100%;">
         <h4 style="padding: 10px;">Blumgi Slime</h4>
       </a>
@@ -325,7 +376,7 @@
 
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/bouncy-woods-unblocked.html">
+      <a class="text-center" href="bouncy-woods-unblocked.html">
         <img src="assets/img/games/bouncy-woods.png" alt="Bouncy Woods - Unblocked Puzzle Game" style="width: 100%;">
         <h4 style="padding: 10px;">Bouncy Woods</h4>
       </a>
@@ -334,7 +385,7 @@
 
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/chicken-merge-unblocked.html">
+      <a class="text-center" href="chicken-merge-unblocked.html">
         <img src="assets/img/games/chicken-merge.png" alt="Chicken Merge - Unblocked Merge Game" style="width: 100%;">
         <h4 style="padding: 10px;">Chicken Merge</h4>
       </a>
@@ -342,7 +393,7 @@
   
 
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/crazy-cars-unblocked.html">
+      <a class="text-center" href="crazy-cars-unblocked.html">
         <img src="assets/img/games/crazy-cars.png" alt="Crazy Cars - Unblocked Racing Game" style="width: 100%;">
         <h4 style="padding: 10px;">Crazy Cars</h4>
       </a>
@@ -351,7 +402,7 @@
  
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/dead-again-unblocked.html"><img src="assets/img/games/dead-again.png" alt="Dead Again - Unblocked Zombie Action Game" style="width: 100%;">
+      <a class="text-center" href="dead-again-unblocked.html"><img src="assets/img/games/dead-again.png" alt="Dead Again - Unblocked Zombie Action Game" style="width: 100%;">
         <h4 style="padding: 10px;">Dead Again</h4>
       </a>
     </div>
@@ -359,7 +410,7 @@
 
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/fruit-ninja-unblocked.html"><img src="assets/img/games/fruit-ninja.png" alt="Fruit Ninja - Unblocked Action Arcade Game" style="width: 100%;">
+      <a class="text-center" href="fruit-ninja-unblocked.html"><img src="assets/img/games/fruit-ninja.png" alt="Fruit Ninja - Unblocked Action Arcade Game" style="width: 100%;">
         <h4 style="padding: 10px;">Fruit Ninja</h4>
       </a>
     </div>
@@ -367,7 +418,7 @@
 
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/hanger-unblocked.html"><img src="assets/img/games/hanger.png" alt="Hanger - Unblocked Physics Puzzle Game" style="width: 100%;">
+      <a class="text-center" href="hanger-unblocked.html"><img src="assets/img/games/hanger.png" alt="Hanger - Unblocked Physics Puzzle Game" style="width: 100%;">
         <h4 style="padding: 10px;">Hanger</h4>
       </a>
     </div>
@@ -377,7 +428,7 @@
   
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/head-soccer-2023-unblocked.html"><img src="assets/img/games/head-soccer-2023.png" alt="Head Soccer 2023 - Unblocked Sports Game" style="width: 100%;">
+      <a class="text-center" href="head-soccer-2023-unblocked.html"><img src="assets/img/games/head-soccer-2023.png" alt="Head Soccer 2023 - Unblocked Sports Game" style="width: 100%;">
         <h4 style="padding: 10px;">Head Soccer 2023</h4>
       </a>
     </div>
@@ -385,7 +436,7 @@
 
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/infinite-soccer-unblocked.html"><img src="assets/img/games/infinite-soccer.png" alt="Infinite Soccer - Unblocked Sports Game" style="width: 100%;">
+      <a class="text-center" href="infinite-soccer-unblocked.html"><img src="assets/img/games/infinite-soccer.png" alt="Infinite Soccer - Unblocked Sports Game" style="width: 100%;">
         <h4 style="padding: 10px;">Infinite Soccer</h4>
       </a>
     </div>
@@ -393,7 +444,7 @@
  
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/marbles-sorting-unblocked.html"><img src="assets/img/games/marbles-sorting.png" alt="Marbles Sorting - Unblocked Puzzle Game" style="width: 100%;">
+      <a class="text-center" href="marbles-sorting-unblocked.html"><img src="assets/img/games/marbles-sorting.png" alt="Marbles Sorting - Unblocked Puzzle Game" style="width: 100%;">
         <h4 style="padding: 10px;">Marbles Sorting</h4>
       </a>
     </div>
@@ -401,7 +452,7 @@
 
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/monkey-mart-unblocked.html"><img src="assets/img/games/monkey-mart.png" alt="Monkey Mart - Unblocked Management Game" style="width: 100%;">
+      <a class="text-center" href="monkey-mart-unblocked.html"><img src="assets/img/games/monkey-mart.png" alt="Monkey Mart - Unblocked Management Game" style="width: 100%;">
         <h4 style="padding: 10px;">Monkey Mart</h4>
       </a>
     </div>
@@ -409,7 +460,7 @@
 
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/pou-unblocked.html"><img src="assets/img/games/pou.png" alt="Pou - Unblocked Virtual Pet Game" style="width: 100%;">
+      <a class="text-center" href="pou-unblocked.html"><img src="assets/img/games/pou.png" alt="Pou - Unblocked Virtual Pet Game" style="width: 100%;">
         <h4 style="padding: 10px;">Pou</h4>
       </a>
     </div>
@@ -418,7 +469,7 @@
   
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/roper-unblocked.html"><img src="assets/img/games/roper.png" alt="Roper - Unblocked Physics Puzzle Game" style="width: 100%;">
+      <a class="text-center" href="roper-unblocked.html"><img src="assets/img/games/roper.png" alt="Roper - Unblocked Physics Puzzle Game" style="width: 100%;">
         <h4 style="padding: 10px;">Roper</h4>
       </a>
     </div>
@@ -427,7 +478,7 @@
  
   
     <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
-      <a class="text-center" href="/super-liquid-soccer-unblocked.html"><img src="assets/img/games/super-liquid-soccer.png" alt="Super Liquid Soccer - Unblocked Sports Game" style="width: 100%;">
+      <a class="text-center" href="super-liquid-soccer-unblocked.html"><img src="assets/img/games/super-liquid-soccer.png" alt="Super Liquid Soccer - Unblocked Sports Game" style="width: 100%;">
         <h4 style="padding: 10px;">Super Liquid Soccer</h4>
       </a>
     </div>
@@ -446,92 +497,92 @@
                 
   <div class="col col-12 col-sm-6 col-md-4 col-xxl-3" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="1">
-    <a href="/adventure-games.html" itemprop="url" title="Play Adventure Games">
+    <a href="adventure-games.html" itemprop="url" title="Play Adventure Games">
       <h5 itemprop="name">🚀 Adventure Games</h5>
     </a>
   </div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/bike-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="bike-games.html">
     <h5>🚲 Bike Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/bus-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="bus-games.html">
     <h5>🚌 Bus Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/car-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="car-games.html">
     <h5>🚗 Car Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/cards-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="cards-games.html">
     <h5>🃏 Cards Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/clicker-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="clicker-games.html">
     <h5>👆 Clicker Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/fighting-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="fighting-games.html">
     <h5>🤼‍♂️ Fighting Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/idle-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="idle-games.html">
     <h5>🕜 Idle Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/jump-run-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="jump-run-games.html">
     <h5>🏃 Jump & Run Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/merge-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="merge-games.html">
     <h5>👥 Merge Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/music-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="music-games.html">
     <h5>🎵 Music Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/pixel-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="pixel-games.html">
     <h5>👾 Pixel Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/puzzle-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="puzzle-games.html">
     <h5>🧩 Puzzle Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/restaurant-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="restaurant-games.html">
     <h5>🍽️ Restaurant Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/shooting-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="shooting-games.html">
     <h5>🔫 Shooting Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/simulator-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="simulator-games.html">
     <h5>🥽 Simulator Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/sports-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="sports-games.html">
     <h5>⚽ Sports Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/survival-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="survival-games.html">
     <h5>🏕️ Survival Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/throwing-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="throwing-games.html">
     <h5>🎳 Throwing Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/tower-defense-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="tower-defense-games.html">
     <h5>🛡️ Tower Defense Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/truck-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="truck-games.html">
     <h5>🚚 Truck Games</h5>
   </a></div>
 
-  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="/word-games.html">
+  <div class="col col-12 col-sm-6 col-md-4 col-xxl-3"><a href="word-games.html">
     <h5>🔤 Word Games</h5>
   </a></div>
 
@@ -777,12 +828,48 @@
     }
     </script>
     
+    <!-- Optimized Script Loading -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/adsense_ubg98_v1_4.js"></script>
-    <script src="assets/js/analytics_v1_3_3.js"></script>
-    <script src="assets/js/game_ubg98_v1_6.js"></script>
-    <script src="assets/js/search_v1_8.js"></script>
+    
+    <!-- Non-critical scripts - load with defer -->
+    <script src="assets/js/game_ubg98_v1_6.js" defer></script>
+    <script src="assets/js/search_v1_8.js" defer></script>
+    
+    <!-- Analytics scripts - load asynchronously -->
+    <script>
+        // Load analytics scripts after page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var adsenseScript = document.createElement('script');
+                adsenseScript.src = 'assets/js/adsense_ubg98_v1_4.js';
+                adsenseScript.async = true;
+                document.head.appendChild(adsenseScript);
+                
+                var analyticsScript = document.createElement('script');
+                analyticsScript.src = 'assets/js/analytics_v1_3_3.js';
+                analyticsScript.async = true;
+                document.head.appendChild(analyticsScript);
+            }, 1000);
+        });
+    </script>
+    
+    <!-- Image lazy loading polyfill for older browsers -->
+    <script>
+        if ('loading' in HTMLImageElement.prototype) {
+            // Browser supports native lazy loading
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.dataset.src || img.src;
+            });
+        } else {
+            // Fallback for browsers that don't support lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js';
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    </script>
 </body>
 
 </html>
