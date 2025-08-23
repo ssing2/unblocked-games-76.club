@@ -832,6 +832,9 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     
+    <!-- Game descriptions for tooltips -->
+    <script src="assets/js/game-descriptions.js" defer></script>
+    
     <!-- Non-critical scripts - load with defer -->
     <script src="assets/js/game_ubg98_v1_6.js" defer></script>
     <script src="assets/js/search_v1_8.js" defer></script>
@@ -851,6 +854,33 @@
                 analyticsScript.async = true;
                 document.head.appendChild(analyticsScript);
             }, 1000);
+        });
+        
+        // Initialize homepage game tooltips
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait for game-descriptions.js to load
+            function initializeTooltips() {
+                if (typeof gameDescriptions === 'undefined') {
+                    setTimeout(initializeTooltips, 100);
+                    return;
+                }
+                
+                // Initialize tooltips for both game sections on homepage
+                const gameSections = document.querySelectorAll('#gamelist .row');
+                gameSections.forEach(section => {
+                    const gameLinks = section.querySelectorAll('.col a[href*="-unblocked.html"]');
+                    gameLinks.forEach(link => {
+                        const gameKey = getGameKeyFromUrl(link.getAttribute('href'));
+                        if (gameKey && gameDescriptions[gameKey]) {
+                            link.addEventListener('mouseenter', (e) => showGameTooltip(gameKey, e));
+                            link.addEventListener('mouseleave', hideGameTooltip);
+                            link.addEventListener('click', hideGameTooltip);
+                        }
+                    });
+                });
+            }
+            
+            initializeTooltips();
         });
     </script>
     

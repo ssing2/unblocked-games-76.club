@@ -3,11 +3,7 @@
 # 排除开发工具和临时文件，只保留网站必需文件
 # =====================================================
 
-# 开发工具目录
-dev-tools/
-
-# Python脚本文件（开发工具）
-*.py
+# Python缓存文件
 __pycache__/
 *.pyc
 *.pyo
@@ -24,22 +20,19 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# 开发工具生成的文件
-url_check_result.txt
-missing_files_report.txt
-*.log
-*.cache
-*.csv
-html_redirects/
+# 开发工具生成的临时文件
+dev-tools/url_check_result.txt
+dev-tools/missing_files_report.txt
+dev-tools/*.log
+dev-tools/*.cache
+dev-tools/*.csv
+dev-tools/html_redirects/
+dev-tools/backup_*/
 
 # 服务器配置文件（已转换为vercel.json）
 redirect_rules.htaccess
 redirect_rules.nginx
 .htaccess
-
-# 文档和说明文件（可选保留）
-REDIRECT_SOLUTION.md
-VERCEL_DEPLOYMENT.md
 
 # 编辑器和IDE文件
 .vscode/

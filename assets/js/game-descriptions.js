@@ -349,6 +349,45 @@ const gameDescriptions = {
   
   'wordle-unlimited': 'Guess five-letter words in this unlimited version of the popular puzzle! Use logical deduction and vocabulary knowledge to solve word challenges without daily limits. The endless gameplay and word mechanics provide continuous brain exercise.',
   
+  // Homepage Featured Games - Latest Games Section
+  'drive-mad': 'Navigate through crazy obstacle courses with realistic physics! Drive various vehicles through loops, jumps, and mechanical contraptions while keeping your cargo safe. Each level presents unique challenges that test your driving skills and patience in this physics-based puzzle racer.',
+  
+  'g-switch-4': 'Master the latest gravity switching mechanics with enhanced features! Navigate through evolved challenges that test gravity control skills to the limit while competing against friends in multiplayer modes. The advanced mechanics and refined gameplay create the definitive gravity-switching experience.',
+  
+  'geometry-jump': 'Leap through geometric challenges with precise timing and rhythm! Navigate colorful geometric obstacles while synchronizing jumps to energetic soundtracks. The combination of platforming precision and musical rhythm creates incredibly addictive arcade experiences.',
+  
+  'heads-arena-soccer-all-stars': 'Compete in chaotic soccer matches with oversized heads! Control quirky characters in fast-paced football action where headers and special moves determine victory. The arcade-style gameplay and character abilities create entertaining sports competition.',
+  
+  'rusher-crusher': 'Crush through obstacles in this high-speed action game! Rush forward while smashing barriers and collecting power-ups in fast-paced arcade challenges. The destruction mechanics and speed-based gameplay create satisfying action experiences.',
+  
+  'super-mario-wonder': 'Experience Mario\'s newest adventure with wonder-powered transformations! Explore creative new worlds with unique power-ups that completely change gameplay mechanics. The innovative wonder effects and classic platforming create magical Nintendo experiences.',
+  
+  'tag': 'Experience the classic game of tag in digital form! Chase or evade other players in various environments while using strategy and speed to win. The simple concept with multiplayer dynamics creates timeless competitive fun.',
+  
+  'vex-8': 'Navigate through the latest installment of challenging obstacle courses! Master precision platforming through increasingly difficult levels filled with deadly traps and creative challenges. The refined controls and level design create the ultimate parkour experience.',
+  
+  // Homepage Editor's Choice Games
+  'ball-sort-halloween': 'Sort spooky Halloween-themed balls in this seasonal puzzle! Organize orange, black, and themed balls into matching containers using logical thinking. The festive graphics and relaxing gameplay create perfect autumn entertainment.',
+  
+  'ball-sort-soccer': 'Combine soccer passion with brain-teasing ball sorting puzzles! Sort soccer balls by team colors and patterns while enjoying football-themed environments. The sports theme adds excitement to classic puzzle mechanics.',
+  
+  'hanger': 'Swing through levels using physics-based rope mechanics! Control a character who swings from point to point while avoiding obstacles and managing momentum. The realistic physics and challenging level design create engaging swinging action.',
+  
+  'head-soccer-2023': 'Score goals with oversized heads in this arcade soccer game! Master shooting techniques and special abilities while competing in tournaments. The quirky character design and fast-paced gameplay create entertaining football action.',
+  
+  'infinite-soccer': 'Play endless soccer matches with unlimited scoring opportunities! Control players in continuous football action while perfecting shooting and passing skills. The infinite gameplay and skill progression create lasting sports entertainment.',
+  
+  'marbles-sorting': 'Organize colorful marbles using strategic thinking and planning! Sort marbles by color and pattern while managing limited space and moves. The satisfying sorting mechanics and progressive difficulty create relaxing puzzle challenges.',
+  
+  'super-liquid-soccer': 'Experience soccer with fluid physics and dynamic gameplay! Control liquid-based players in unique football matches where physics create unpredictable and entertaining moments. The innovative mechanics and visual effects create distinctive sports action.',
+  
+  // Additional Homepage Games
+  'little-alchemy-2': 'Discover the magic of creation by combining elements! Start with basic materials like fire, water, earth, and air, then combine them to create hundreds of new items. The discovery-based gameplay and unlimited experimentation create endlessly engaging scientific exploration.',
+  
+  'papa-cherry-saga': 'Match colorful fruits in this sweet puzzle adventure! Swap and match cherries, berries, and other fruits to clear levels and unlock new challenges. The vibrant graphics and satisfying match-three mechanics create delightful casual puzzle entertainment.',
+  
+  'heads-arena-soccer-all-stars': 'Compete in chaotic soccer matches with oversized heads! Control quirky characters in fast-paced football action where headers and special moves determine victory. The arcade-style gameplay and character abilities create entertaining sports competition.',
+  
   // Extended Game Collection
   'bottle-flip': 'Master the art of bottle flipping in this physics-based skill game! Time your flips perfectly to land bottles upright on various surfaces and obstacles. The simple concept with precise physics creates surprisingly challenging and addictive gameplay.',
   

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Game Tooltips Test</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+        body { 
+            padding: 20px; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .test-section { 
+            margin-bottom: 40px; 
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .game-item { 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            padding: 15px; 
+            margin: 10px; 
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        .game-item:hover { 
+            background-color: #e9ecef; 
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .game-image { 
+            width: 120px; 
+            height: 90px; 
+            background: linear-gradient(45deg, #007bff, #28a745); 
+            border-radius: 6px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: white; 
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .status-success { background-color: #28a745; }
+        .status-warning { background-color: #ffc107; }
+        .status-error { background-color: #dc3545; }
+        .test-stats {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 Homepage Game Tooltips Test</h1>
+        <p class="lead">Testing tooltip functionality for index.html games</p>
+        
+        <div class="test-stats">
+            <h5>Test Status:</h5>
+            <div id="test-results">
+                <p><span class="status-indicator status-warning"></span>Loading game descriptions...</p>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>📈 Latest Games Section</h3>
+            <p>These games appear in the "Latest Games" section of index.html</p>
+            <div class="row" id="gamelist">
+                <div class="row">
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="drive-mad-unblocked.html">
+                            <div class="game-image mx-auto mb-2">DRIVE<br>MAD</div>
+                            <h6>Drive Mad</h6>
+                        </a>
+                    </div>
+                    
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="g-switch-4-unblocked.html">
+                            <div class="game-image mx-auto mb-2">G-SWITCH<br>4</div>
+                            <h6>G Switch 4</h6>
+                        </a>
+                    </div>
+                    
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="geometry-jump-unblocked.html">
+                            <div class="game-image mx-auto mb-2">GEOMETRY<br>JUMP</div>
+                            <h6>Geometry Jump</h6>
+                        </a>
+                    </div>
+                    
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="heads-arena-soccer-all-stars-unblocked.html">
+                            <div class="game-image mx-auto mb-2">HEADS<br>SOCCER</div>
+                            <h6>Heads Arena Soccer</h6>
+                        </a>
+                    </div>
+                    
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="subway-surfers-unblocked.html">
+                            <div class="game-image mx-auto mb-2">SUBWAY<br>SURFERS</div>
+                            <h6>Subway Surfers</h6>
+                        </a>
+                    </div>
+                    
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="super-mario-wonder-unblocked.html">
+                            <div class="game-image mx-auto mb-2">MARIO<br>WONDER</div>
+                            <h6>Super Mario Wonder</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>🎯 Editor's Choice Games Section</h3>
+            <p>These games appear in the "Editor Choice Games" section of index.html</p>
+            <div class="row" id="gamelist-editor">
+                <div class="row">
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="ball-sort-halloween-unblocked.html">
+                            <div class="game-image mx-auto mb-2">BALL SORT<br>HALLOWEEN</div>
+                            <h6>Ball Sort Halloween</h6>
+                        </a>
+                    </div>
+                    
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="monkey-mart-unblocked.html">
+                            <div class="game-image mx-auto mb-2">MONKEY<br>MART</div>
+                            <h6>Monkey Mart</h6>
+                        </a>
+                    </div>
+                    
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="fruit-ninja-unblocked.html">
+                            <div class="game-image mx-auto mb-2">FRUIT<br>NINJA</div>
+                            <h6>Fruit Ninja</h6>
+                        </a>
+                    </div>
+                    
+                    <div class="col col-12 col-sm-6 col-md-4 col-xl-3">
+                        <a class="text-center game-item d-block text-decoration-none" href="head-soccer-2023-unblocked.html">
+                            <div class="game-image mx-auto mb-2">HEAD<br>SOCCER</div>
+                            <h6>Head Soccer 2023</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert alert-info mt-4">
+            <h5>🧪 Test Instructions:</h5>
+            <ul>
+                <li><strong>Hover Test:</strong> Move your mouse over any game card to see its description tooltip</li>
+                <li><strong>Appearance:</strong> Tooltips should have dark background with white text</li>
+                <li><strong>Content:</strong> Each description should be 50-150 words explaining the game</li>
+                <li><strong>Animation:</strong> Smooth fade-in/fade-out effects</li>
+                <li><strong>Positioning:</strong> Tooltips should stay within viewport bounds</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h4>📊 Coverage Report</h4>
+            <div id="coverage-report">
+                <p>Analyzing tooltip coverage...</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/game-descriptions.js"></script>
+    
+    <script>
+        // Test script to verify tooltip functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            let testResults = {
+                gamesFound: 0,
+                gamesWithDescriptions: 0,
+                gamesMissingDescriptions: [],
+                sectionsProcessed: 0
+            };
+            
+            function updateTestStatus() {
+                const resultDiv = document.getElementById('test-results');
+                const coverageDiv = document.getElementById('coverage-report');
+                
+                if (typeof gameDescriptions === 'undefined') {
+                    resultDiv.innerHTML = '<p><span class="status-indicator status-error"></span>Error: game-descriptions.js not loaded</p>';
+                    return;
+                }
+                
+                // Test both sections
+                const sections = [
+                    { id: '#gamelist', name: 'Latest Games' },
+                    { id: '#gamelist-editor', name: 'Editor\'s Choice' }
+                ];
+                
+                sections.forEach(section => {
+                    const gameLinks = document.querySelectorAll(`${section.id} a[href*="-unblocked.html"]`);
+                    testResults.sectionsProcessed++;
+                    
+                    gameLinks.forEach(link => {
+                        testResults.gamesFound++;
+                        const gameKey = getGameKeyFromUrl(link.getAttribute('href'));
+                        
+                        if (gameKey && gameDescriptions[gameKey]) {
+                            testResults.gamesWithDescriptions++;
+                            // Initialize tooltip for this game
+                            link.addEventListener('mouseenter', (e) => showGameTooltip(gameKey, e));
+                            link.addEventListener('mouseleave', hideGameTooltip);
+                            link.addEventListener('click', hideGameTooltip);
+                        } else {
+                            testResults.gamesMissingDescriptions.push({
+                                key: gameKey,
+                                href: link.getAttribute('href'),
+                                title: link.querySelector('h6')?.textContent || 'Unknown'
+                            });
+                        }
+                    });
+                });
+                
+                // Update status
+                const coverage = (testResults.gamesWithDescriptions / testResults.gamesFound * 100).toFixed(1);
+                let statusClass = 'status-success';
+                let statusText = 'All tooltips working correctly!';
+                
+                if (coverage < 100) {
+                    statusClass = coverage > 80 ? 'status-warning' : 'status-error';
+                    statusText = `${testResults.gamesMissingDescriptions.length} games missing descriptions`;
+                }
+                
+                resultDiv.innerHTML = `
+                    <p><span class="status-indicator ${statusClass}"></span>${statusText}</p>
+                    <small>Games found: ${testResults.gamesFound} | With tooltips: ${testResults.gamesWithDescriptions} | Coverage: ${coverage}%</small>
+                `;
+                
+                // Update coverage report
+                let coverageHTML = `
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>✅ Games with Tooltips (${testResults.gamesWithDescriptions})</h6>
+                            <p class="text-success">Tooltips working correctly for ${coverage}% of games</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>⚠️ Missing Descriptions (${testResults.gamesMissingDescriptions.length})</h6>
+                `;
+                
+                if (testResults.gamesMissingDescriptions.length > 0) {
+                    coverageHTML += '<ul class="text-warning small">';
+                    testResults.gamesMissingDescriptions.slice(0, 5).forEach(game => {
+                        coverageHTML += `<li>${game.title} (${game.key || 'unknown-key'})</li>`;
+                    });
+                    if (testResults.gamesMissingDescriptions.length > 5) {
+                        coverageHTML += `<li>... and ${testResults.gamesMissingDescriptions.length - 5} more</li>`;
+                    }
+                    coverageHTML += '</ul>';
+                } else {
+                    coverageHTML += '<p class="text-success">All games have descriptions!</p>';
+                }
+                
+                coverageHTML += '</div></div>';
+                coverageDiv.innerHTML = coverageHTML;
+            }
+            
+            // Wait for game descriptions to load
+            function initTest() {
+                if (typeof gameDescriptions === 'undefined') {
+                    setTimeout(initTest, 100);
+                    return;
+                }
+                updateTestStatus();
+            }
+            
+            initTest();
+        });
+    </script>
+</body>
+</html>
